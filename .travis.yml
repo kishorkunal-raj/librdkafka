@@ -7,6 +7,10 @@ env:
  global:
   - ARCH=x64
 
+arch:
+  - ppc64le
+  - amd64
+
 addons:
   apt:
     packages:
@@ -15,7 +19,6 @@ addons:
     - python3-setuptools
     # required by openssl installer
     - perl
-
 
 matrix:
  include:
